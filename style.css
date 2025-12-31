@@ -1,109 +1,15 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-/* Background */
-body {
-    height: 100vh;
-    background: linear-gradient(135deg, #020617, #020617, #0f172a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-/* Container */
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Glass Card */
-.card {
-    background: rgba(15, 23, 42, 0.6);
-    backdrop-filter: blur(12px);
-    border-radius: 18px;
-    padding: 40px;
-    max-width: 420px;
-    width: 100%;
-    text-align: center;
-    border: 1px solid rgba(56, 189, 248, 0.25);
-    box-shadow: 0 0 40px rgba(56, 189, 248, 0.15);
-    animation: fadeUp 1s ease;
-}
-
-/* Title */
-h1 {
-    font-size: 38px;
-    color: #38bdf8;
-    margin-bottom: 10px;
-}
-
-/* Subtitle */
-.subtitle {
-    color: #cbd5f5;
-    font-size: 16px;
+/* Biodata */
+.bio {
     margin-bottom: 30px;
 }
 
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+.bio p {
+    color: #e5e7eb;
+    font-size: 15px;
+    margin: 6px 0;
 }
 
-.btn {
-    padding: 12px 22px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-/* Button styles */
-.primary {
-    background: #38bdf8;
-    color: #020617;
-}
-
-.primary:hover {
-    background: #0ea5e9;
-    transform: translateY(-3px);
-}
-
-.outline {
-    border: 2px solid #38bdf8;
+.bio span {
     color: #38bdf8;
-}
-
-.outline:hover {
-    background: #38bdf8;
-    color: #020617;
-    transform: translateY(-3px);
-}
-
-/* Animation */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 30px;
-    }
+    font-weight: 600;
 }
